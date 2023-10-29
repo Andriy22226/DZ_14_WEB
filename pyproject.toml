@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "dz-14-web"
+version = "0.1.0"
+description = ""
+authors = ["Andriy <127453425+Andriy22226@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.104.0"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+sqlalchemy = "^2.0.22"
+aiosqlite = "^0.19.0"
+py = "^1.11.0"
+alembic = "^1.12.1"
+fastapi-limiter = "^0.1.5"
+api = "^0.0.7"
+async = "^0.6.2"
+asyncpg = "^0.28.0"
+pytest = "^7.4.3"
+sphinx = "^7.2.6"
+beautifulsoup4 = "^4.12.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+sphinx = "^7.2.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
